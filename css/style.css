@@ -1,3 +1,6 @@
+/* 預設 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     background-color: #A6C5D0;
 }
@@ -14,6 +17,75 @@ a {
     text-decoration: none;
 }
 
+img {
+    mix-blend-mode: darken;
+}
+
+
+/* 頁標css */
+
+header {
+    width: 100%;
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7D7D7;
+}
+
+.header_nav {
+    width: 1280px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list {
+    display: inline-flex;
+}
+
+.nav_list_item {
+    margin-left: 26px;
+    width: 136px;
+    height: 33px;
+    background-color: #AAA28E;
+    text-align: center;
+    line-height: 33px;
+}
+
+.nav_list_item a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #203A74;
+}
+
+.header_alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/Damage-area-LAquila-earthquake-2009.jpg");
+    background-position: center;
+}
+
+.red {
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.red a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: red;
+}
+
+
+/* 頁腳css */
+
 footer {
     /* position: relative; */
     background-color: #D7D7D7;
@@ -29,11 +101,21 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    /* attempts to center footer content */
+    /* 試圖置中頁腳 */
     /* position: absolute; */
     /* left: 50%; */
     /* right: 50%; */
     /* transform: translate(-50% -50%); */
     /* margin-left: auto; */
     /* margin-right: auto; */
+}
+
+.footer_nav {
+    text-align: center;
+}
+
+.footer_nav a {
+    color: #203A74;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
 }
