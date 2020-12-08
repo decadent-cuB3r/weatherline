@@ -169,7 +169,7 @@ header {
     text-align: end;
 }
 
-.content_detailed h2::after {
+.content_detailed temp::after {
     content: '℃';
 }
 
