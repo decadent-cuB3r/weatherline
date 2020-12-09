@@ -36,6 +36,16 @@ aside {
     margin-top: 32px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* 頁標css */
 
@@ -169,8 +179,39 @@ header {
     text-align: end;
 }
 
+.content_detailed {
+    width: 1200px;
+    height: 520px;
+    padding: 40px;
+    background-color: #7aa4b7;
+    margin-top: 32px;
+}
+
+.content_detailed .container {
+    width: 380px;
+    align-items: flex-end;
+}
+
+.content_detailed .container h1 {
+    font-size: 64px;
+    line-height: 0;
+}
+
+.content_detailed .container p {
+    font-size: 36px;
+    line-height: 0;
+}
+
+temp {
+    font-size: 144px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-weight: bold;
+}
+
 .content_detailed temp::after {
     content: '℃';
+    font-size: 144px;
 }
 
 
