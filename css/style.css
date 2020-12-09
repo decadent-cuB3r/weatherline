@@ -109,11 +109,44 @@ header {
 }
 
 
+/* 頁標RWD M-size */
+
+@media screen and (max-width: 770px) {
+    .header_nav img {
+        width: 84px;
+        height: 20px;
+    }
+    .nav_list_item {
+        margin-left: 24px;
+        width: 70px;
+        height: 12px;
+        text-align: center;
+        line-height: 12px;
+    }
+    .nav_list_item a {
+        font-size: 10px;
+    }
+    .red {
+        width: 136px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .red a {
+        font-size: 18px;
+    }
+}
+
+
 /* 主頁面css */
+
+main {
+    margin-left: 20px;
+}
 
 .content {
     display: flex;
     justify-content: space-between;
+    width: 1240px;
 }
 
 .content img {
@@ -180,7 +213,7 @@ header {
 }
 
 .content_detailed {
-    width: 1200px;
+    width: 1160px;
     height: 520px;
     padding: 40px;
     background-color: #7aa4b7;
@@ -218,7 +251,6 @@ temp {
 /* 頁腳css */
 
 footer {
-    /* position: relative; */
     background-color: #D7D7D7;
     width: 100%;
     display: flex;
@@ -231,13 +263,6 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    /* 試圖置中頁腳 */
-    /* position: absolute; */
-    /* left: 50%; */
-    /* right: 50%; */
-    /* transform: translate(-50% -50%); */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
 }
 
 .footer_nav {
@@ -249,3 +274,8 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
+
+
+/* 頁腳RWD M-size */
+
+@media screen and (max-width: 770px) {}
