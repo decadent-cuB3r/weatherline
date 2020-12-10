@@ -17,10 +17,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    mix-blend-mode: darken;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -66,6 +62,10 @@ header {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header_nav img {
+    mix-blend-mode: darken;
 }
 
 .nav_list {
@@ -248,6 +248,21 @@ temp {
 }
 
 
+/* 照片區塊 */
+
+.photos {
+    width: 1200px;
+    background-color: #7AA4B7;
+    display: block;
+    padding: 40px;
+}
+
+.ph_row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 /* 頁腳css */
 
 footer {
@@ -263,6 +278,10 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer_content img {
+    mix-blend-mode: darken;
 }
 
 .footer_nav {
