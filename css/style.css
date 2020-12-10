@@ -24,7 +24,12 @@ a {
 
 .set_width {
     width: 1280px;
-    overflow: hidden;
+}
+
+@media screen and (max-width: 770px) {
+    .set_width {
+        width: 768px;
+    }
 }
 
 main,
@@ -251,10 +256,17 @@ temp {
 /* 照片區塊 */
 
 .photos {
-    width: 1200px;
+    width: 94%;
     background-color: #7AA4B7;
     display: block;
-    padding: 0px 40px 20px 40px;
+    padding: 0px 3% 20px 3%;
+}
+
+@media screen and (max-width: 770px) {
+    .photos {
+        width: 640px;
+        padding: 0px 64px 32px 64px;
+    }
 }
 
 .ph_row h1 {
@@ -265,14 +277,108 @@ temp {
     text-align: center;
 }
 
-.ph_row {
+.ph_row_fluid {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.ph_
+@media screen and (max-width: 770px) {
+    .ph_row_fluid {
+        justify-content: space-between;
+    }
+}
+
+.ph_lg_0 {
+    width: 100%;
+}
+
+.ph_lg_1 {
+    width: 25%;
+}
+
+.ph_lg_2 {
+    width: 25%;
+}
+
+.ph_lg_3 {
+    width: 25%;
+}
+
+.ph_lg_4 {
+    width: 25%;
+}
+
+.ph_lg_5 {
+    width: 25%
+}
+
+.ph_lg_6 {
+    width: 25%;
+}
+
+.ph_lg_7 {
+    width: 50%;
+}
+
+@media screen and (max-width: 770px) {
+    .ph_md_0 h1 {
+        width: 176px;
+        height: 176px;
+        background-color: #AAA28E;
+        line-height: 176px;
+        text-align: center;
+        margin: 0;
+    }
+    .ph_md_0 {
+        width: 33%;
+    }
+    .ph_md_1 {
+        width: 33%;
+    }
+    .ph_md_2 {
+        width: 33%;
+    }
+    .ph_md_3 {
+        width: 33%;
+    }
+    .ph_md_4 {
+        width: 33%;
+    }
+    .ph_md_5 {
+        width: 33%;
+    }
+    .ph_md_6 {
+        width: 33%;
+    }
+    .ph_md_7 {
+        width: 67%;
+    }
+    .ph_md_1 img {
+        width: 176px;
+    }
+    .ph_md_2 img {
+        width: 176px;
+    }
+    .ph_md_3 img {
+        width: 176px;
+    }
+    .ph_md_4 img {
+        width: 176px;
+    }
+    .ph_md_5 img {
+        width: 176px;
+    }
+    .ph_md_6 img {
+        width: 176px;
+    }
+    .ph_md_7 img {
+        width: 408px;
+    }
+}
+
+
 /* 頁腳css */
 
 footer {
