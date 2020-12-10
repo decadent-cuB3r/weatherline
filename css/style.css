@@ -73,7 +73,7 @@ header {
 }
 
 .nav_list_item {
-    margin-left: 26px;
+    margin-right: 26px;
     width: 136px;
     height: 33px;
     background-color: #AAA28E;
@@ -117,7 +117,7 @@ header {
         height: 20px;
     }
     .nav_list_item {
-        margin-left: 24px;
+        margin-right: 24px;
         width: 70px;
         height: 12px;
         text-align: center;
