@@ -254,12 +254,21 @@ temp {
     width: 1200px;
     background-color: #7AA4B7;
     display: block;
-    padding: 40px;
+    padding: 0px 40px 20px 40px;
+}
+
+.ph_row h1 {
+    width: 220px;
+    height: 40px;
+    background-color: #AAA28E;
+    margin: 0;
+    text-align: center;
 }
 
 .ph_row {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 
