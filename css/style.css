@@ -268,10 +268,11 @@ temp {
 .ph_row {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-
+.ph_
 /* 頁腳css */
 
 footer {
