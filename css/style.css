@@ -17,13 +17,17 @@ a {
     text-decoration: none;
 }
 
+
 /* anything with .container will be in the center */
+
 .container {
     display: flex;
     justify-content: center;
 }
 
+
 /* the .setwidth class sets the container of main components */
+
 .set_width {
     width: 1280px;
 }
@@ -158,6 +162,14 @@ main {
 
 .content_fluid img {
     mix-blend-mode: multiply;
+}
+
+.content_ms-0 {
+    width: 53.2%;
+}
+
+.content_ms-1 {
+    width: 46.8%;
 }
 
 .loc {
