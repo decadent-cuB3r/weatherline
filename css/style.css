@@ -17,11 +17,13 @@ a {
     text-decoration: none;
 }
 
+/* anything with .container will be in the center */
 .container {
     display: flex;
     justify-content: center;
 }
 
+/* the .setwidth class sets the container of main components */
 .set_width {
     width: 1280px;
 }
@@ -148,13 +150,13 @@ main {
     margin-left: 20px;
 }
 
-.content {
+.content_fluid {
     display: flex;
-    justify-content: space-between;
-    width: 1240px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.content img {
+.content_fluid img {
     mix-blend-mode: multiply;
 }
 
@@ -311,15 +313,18 @@ temp {
 }
 
 .ph_lg_5 {
-    width: 25%
+    width: 25%;
+    margin-top: 2.5%;
 }
 
 .ph_lg_6 {
     width: 25%;
+    margin-top: 2.5%;
 }
 
 .ph_lg_7 {
     width: 50%;
+    margin-top: 2.5%;
 }
 
 @media screen and (max-width: 770px) {
@@ -357,24 +362,31 @@ temp {
     }
     .ph_md_1 img {
         width: 176px;
+        height: 176px;
     }
     .ph_md_2 img {
         width: 176px;
+        height: 176px;
     }
     .ph_md_3 img {
         width: 176px;
+        height: 176px;
     }
     .ph_md_4 img {
         width: 176px;
+        height: 176px;
     }
     .ph_md_5 img {
         width: 176px;
+        height: 176px;
     }
     .ph_md_6 img {
         width: 176px;
+        height: 176px;
     }
     .ph_md_7 img {
         width: 408px;
+        height: 176px;
     }
 }
 
