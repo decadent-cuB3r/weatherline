@@ -384,6 +384,7 @@ temp {
 footer {
     background-color: #D7D7D7;
     width: 100%;
+    max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,9 +409,42 @@ footer {
     color: #203A74;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    line-height: 33px;
+    margin: 0;
 }
 
 
 /* 頁腳RWD M-size */
 
-@media screen and (max-width: 770px) {}
+@media screen and (max-width: 770px) {
+    .footer {
+        min-height: 100%;
+    }
+    .footer_content {
+        width: 259px;
+        position: relative;
+        height: 600px;
+    }
+    .foot-ms-0 {
+        position: absolute;
+        top: 60%;
+    }
+    .foot-ms-1 {
+        position: absolute;
+        top: 0%;
+        left: 50px;
+    }
+    .foot-ms-2 {
+        position: absolute;
+        top: 50%;
+        width: 215px;
+        height: 51px;
+        left: 20px;
+    }
+    .footer_nav a {
+        color: #203A74;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        line-height: 33px;
+    }
+}
