@@ -1,474 +1,440 @@
-/* 預設 */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body {
-    background-color: #A6C5D0;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/* anything with .container will be in the center */
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* the .setwidth class sets the container of main components */
-
-.set_width {
-    width: 1280px;
-}
-
-@media screen and (max-width: 770px) {
+        /* 預設 */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body {
+        background-color: #A6C5D0;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        text-decoration: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /* anything with .container will be in the center */
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    /* the .setwidth class sets the container of main components */
+    
     .set_width {
-        width: 768px;
+        width: 93.7%;
+        margin: auto;
     }
-}
-
-main,
-aside {
-    margin-top: 32px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-li {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/* 頁標css */
-
-header {
-    width: 100%;
-    display: inline-block;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #D7D7D7;
-}
-
-.header_nav {
-    width: 1280px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header_nav img {
-    mix-blend-mode: darken;
-}
-
-.nav_list {
-    display: inline-flex;
-}
-
-.nav_list_item {
-    margin-right: 26px;
-    width: 136px;
-    height: 33px;
-    background-color: #AAA28E;
-    text-align: center;
-    line-height: 33px;
-}
-
-.nav_list_item a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #203A74;
-}
-
-.header_alert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../images/Damage-area-LAquila-earthquake-2009.jpg");
-    background-position: center;
-}
-
-.red {
-    width: 400px;
-    height: 60px;
-    line-height: 60px;
-}
-
-.red a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: red;
-}
-
-
-/* 頁標RWD M-size */
-
-@media screen and (max-width: 770px) {
-    .header_nav img {
-        width: 84px;
-        height: 20px;
+    
+    @media screen and (max-width: 770px) {
+        .set_width {
+            width: 768px;
+        }
     }
-    .nav_list_item {
-        margin-right: 24px;
-        width: 70px;
-        height: 12px;
-        text-align: center;
-        line-height: 12px;
+    
+    main,
+    aside {
+        margin-top: 32px;
     }
-    .nav_list_item a {
-        font-size: 10px;
-    }
-    .red {
-        width: 136px;
-        height: 40px;
-        line-height: 40px;
-    }
-    .red a {
-        font-size: 18px;
-    }
-}
-
-
-/* 主頁面css */
-
-main {
-    margin-left: 20px;
-}
-
-.content_fluid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.content_fluid img {
-    mix-blend-mode: multiply;
-}
-
-.content_ms-0 {
-    width: 53.2%;
-}
-
-.content_ms-1 {
-    width: 46.8%;
-}
-
-.loc {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 600px;
-    height: 330px;
-    background-color: #7aa4b7;
-    margin-bottom: 20px;
-}
-
-.loc_text {
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-}
-
-.loc_text h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-size: 64px;
-}
-
-.air {
-    width: 600px;
-    height: 250px;
-    background-color: #7AA4B7;
-    overflow: hidden;
-}
-
-.air_1 {
-    height: 180px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.air p {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-.air_pollution {
-    font-family: 'Roboto', sans-serif;
-    font-size: 144px;
-    line-height: 144px;
-    width: auto;
-}
-
-.air_pollution::after {
-    content: 'AQI';
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    display: block;
-    line-height: 0px;
-    text-align: end;
-}
-
-.content_detailed {
-    width: 1160px;
-    height: 520px;
-    padding: 40px;
-    background-color: #7aa4b7;
-    margin-top: 32px;
-}
-
-.content_detailed .container {
-    width: 380px;
-    align-items: flex-end;
-}
-
-.content_detailed .container h1 {
-    font-size: 64px;
-    line-height: 0;
-}
-
-.content_detailed .container p {
-    font-size: 36px;
-    line-height: 0;
-}
-
-temp {
-    font-size: 144px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-weight: bold;
-}
-
-.content_detailed temp::after {
-    content: '℃';
-    font-size: 144px;
-}
-
-
-/* 照片區塊 */
-
-.photos {
-    width: 94%;
-    background-color: #7AA4B7;
-    display: block;
-    padding: 0px 3% 20px 3%;
-}
-
-@media screen and (max-width: 770px) {
-    .photos {
-        width: 640px;
-        padding: 0px 64px 32px 64px;
-    }
-}
-
-.ph_row h1 {
-    width: 220px;
-    height: 40px;
-    background-color: #AAA28E;
-    margin: 0;
-    text-align: center;
-}
-
-.ph_row_fluid {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 770px) {
-    .ph_row_fluid {
-        justify-content: space-between;
-    }
-}
-
-.ph_lg_0 {
-    width: 100%;
-}
-
-.ph_lg_1 {
-    width: 25%;
-}
-
-.ph_lg_2 {
-    width: 25%;
-}
-
-.ph_lg_3 {
-    width: 25%;
-}
-
-.ph_lg_4 {
-    width: 25%;
-}
-
-.ph_lg_5 {
-    width: 25%;
-    margin-top: 2.5%;
-}
-
-.ph_lg_6 {
-    width: 25%;
-    margin-top: 2.5%;
-}
-
-.ph_lg_7 {
-    width: 50%;
-    margin-top: 2.5%;
-}
-
-@media screen and (max-width: 770px) {
-    .ph_md_0 h1 {
-        width: 176px;
-        height: 176px;
-        background-color: #AAA28E;
-        line-height: 176px;
-        text-align: center;
-        margin: 0;
-    }
-    .ph_md_0 {
-        width: 33%;
-    }
-    .ph_md_1 {
-        width: 33%;
-    }
-    .ph_md_2 {
-        width: 33%;
-    }
-    .ph_md_3 {
-        width: 33%;
-    }
-    .ph_md_4 {
-        width: 33%;
-    }
-    .ph_md_5 {
-        width: 33%;
-    }
-    .ph_md_6 {
-        width: 33%;
-    }
-    .ph_md_7 {
-        width: 67%;
-    }
-    .ph_md_1 img {
-        width: 176px;
-        height: 176px;
-    }
-    .ph_md_2 img {
-        width: 176px;
-        height: 176px;
-    }
-    .ph_md_3 img {
-        width: 176px;
-        height: 176px;
-    }
-    .ph_md_4 img {
-        width: 176px;
-        height: 176px;
-    }
-    .ph_md_5 img {
-        width: 176px;
-        height: 176px;
-    }
-    .ph_md_6 img {
-        width: 176px;
-        height: 176px;
-    }
-    .ph_md_7 img {
-        width: 408px;
-        height: 176px;
-    }
-}
-
-
-/* 頁腳css */
-
-footer {
-    background-color: #D7D7D7;
-    width: 100%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_content {
-    width: 1280px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer_content img {
-    mix-blend-mode: darken;
-}
-
-.footer_nav {
-    text-align: center;
-}
-
-.footer_nav a {
-    color: #203A74;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    line-height: 33px;
-    margin: 0;
-}
-
-
-/* 頁腳RWD M-size */
-
-@media screen and (max-width: 770px) {
-    .footer {
-        min-height: 100%;
-    }
-    .footer_content {
-        width: 259px;
-        position: relative;
-        height: 600px;
-    }
-    .foot-ms-0 {
-        position: absolute;
-        top: 60%;
-    }
-    .foot-ms-1 {
-        position: absolute;
-        top: 0%;
-        left: 50px;
-    }
-    .foot-ms-2 {
-        position: absolute;
-        top: 50%;
-        width: 215px;
-        height: 51px;
-        left: 20px;
-    }
-    .footer_nav a {
-        color: #203A74;
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    li {
         font-family: 'Roboto', sans-serif;
-        font-size: 12px;
+    }
+    /* 頁標css */
+    
+    header {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D7D7D7;
+    }
+    
+    .header_nav {
+        width: 1280px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header_nav img {
+        mix-blend-mode: darken;
+    }
+    
+    .nav_list {
+        display: inline-flex;
+    }
+    
+    .nav_list_item {
+        margin-right: 26px;
+        width: 136px;
+        height: 33px;
+        background-color: #AAA28E;
+        text-align: center;
         line-height: 33px;
     }
-}
+    
+    .nav_list_item a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #203A74;
+    }
+    
+    .header_alert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/Damage-area-LAquila-earthquake-2009.jpg");
+        background-position: center;
+    }
+    
+    .red {
+        width: 400px;
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    .red a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: red;
+    }
+    /* 頁標RWD M-size */
+    
+    @media screen and (max-width: 770px) {
+        .header_nav img {
+            width: 84px;
+            height: 20px;
+        }
+        .nav_list_item {
+            margin-right: 24px;
+            width: 70px;
+            height: 12px;
+            text-align: center;
+            line-height: 12px;
+        }
+        .nav_list_item a {
+            font-size: 10px;
+        }
+        .red {
+            width: 136px;
+            height: 40px;
+            line-height: 40px;
+        }
+        .red a {
+            font-size: 18px;
+        }
+    }
+    /* 主頁面css */
+    
+    main {
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+    
+    .content_fluid {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: auto;
+    }
+    
+    .content-ms-0 {
+        width: 53.2%;
+        mix-blend-mode: multiply;
+        height: 100%;
+    }
+    
+    .content-ms-1 {
+        width: 46.8%;
+    }
+    /* RWD for mid size content */
+    
+    @media screen and (max-width: 1155px) {
+        .content-ms-0 {
+            width: 35%;
+        }
+        .content-ms-1 {
+            width: 65%;
+        }
+        .loc_text h1 {
+            font-size: 36px;
+        }
+        .loc {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 330px;
+            background-color: #7aa4b7;
+            margin-bottom: 20px;
+        }
+        .loc_text {
+            display: inline-block;
+            align-items: center;
+            text-align: center;
+        }
+        .loc_text h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            font-size: 64px;
+            line-height: 0;
+        }
+        .air {
+            width: 100%;
+            height: 250px;
+            background-color: #7AA4B7;
+            overflow: hidden;
+        }
+        .air_1 {
+            height: 180px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .air p {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .air_pollution {
+            font-family: 'Roboto', sans-serif;
+            font-size: 144px;
+            line-height: 144px;
+            width: auto;
+        }
+        .air_pollution::after {
+            content: 'AQI';
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            display: block;
+            line-height: 0px;
+            text-align: end;
+        }
+        /* partition for detailed contents(make into fluid structure later) */
+        .content_detailed {
+            width: 1160px;
+            height: 520px;
+            padding: 40px;
+            background-color: #7aa4b7;
+            margin-top: 32px;
+        }
+        .content_detailed .container {
+            width: 380px;
+            align-items: flex-end;
+        }
+        .content_detailed .container h1 {
+            font-size: 64px;
+            line-height: 0;
+        }
+        .content_detailed .container p {
+            font-size: 36px;
+            line-height: 0;
+        }
+        temp {
+            font-size: 144px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-weight: bold;
+        }
+        .content_detailed temp::after {
+            content: '℃';
+            font-size: 144px;
+        }
+        /* 照片區塊 */
+        .photos {
+            width: 94%;
+            background-color: #7AA4B7;
+            display: block;
+            padding: 0px 3% 20px 3%;
+        }
+        @media screen and (max-width: 770px) {
+            .photos {
+                width: 640px;
+                padding: 0px 64px 32px 64px;
+            }
+        }
+        .ph_row h1 {
+            width: 220px;
+            height: 40px;
+            background-color: #AAA28E;
+            margin: 0;
+            text-align: center;
+        }
+        .ph_row_fluid {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 770px) {
+            .ph_row_fluid {
+                justify-content: space-between;
+            }
+        }
+        .ph_lg_0 {
+            width: 100%;
+        }
+        .ph_lg_1 {
+            width: 25%;
+        }
+        .ph_lg_2 {
+            width: 25%;
+        }
+        .ph_lg_3 {
+            width: 25%;
+        }
+        .ph_lg_4 {
+            width: 25%;
+        }
+        .ph_lg_5 {
+            width: 25%;
+            margin-top: 2.5%;
+        }
+        .ph_lg_6 {
+            width: 25%;
+            margin-top: 2.5%;
+        }
+        .ph_lg_7 {
+            width: 50%;
+            margin-top: 2.5%;
+        }
+        @media screen and (max-width: 770px) {
+            .ph_md_0 h1 {
+                width: 176px;
+                height: 176px;
+                background-color: #AAA28E;
+                line-height: 176px;
+                text-align: center;
+                margin: 0;
+            }
+            .ph_md_0 {
+                width: 33%;
+            }
+            .ph_md_1 {
+                width: 33%;
+            }
+            .ph_md_2 {
+                width: 33%;
+            }
+            .ph_md_3 {
+                width: 33%;
+            }
+            .ph_md_4 {
+                width: 33%;
+            }
+            .ph_md_5 {
+                width: 33%;
+            }
+            .ph_md_6 {
+                width: 33%;
+            }
+            .ph_md_7 {
+                width: 67%;
+            }
+            .ph_md_1 img {
+                width: 176px;
+                height: 176px;
+            }
+            .ph_md_2 img {
+                width: 176px;
+                height: 176px;
+            }
+            .ph_md_3 img {
+                width: 176px;
+                height: 176px;
+            }
+            .ph_md_4 img {
+                width: 176px;
+                height: 176px;
+            }
+            .ph_md_5 img {
+                width: 176px;
+                height: 176px;
+            }
+            .ph_md_6 img {
+                width: 176px;
+                height: 176px;
+            }
+            .ph_md_7 img {
+                width: 408px;
+                height: 176px;
+            }
+        }
+        /* 頁腳css */
+        footer {
+            background-color: #D7D7D7;
+            width: 100%;
+            max-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer_content {
+            width: 1280px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer_content img {
+            mix-blend-mode: darken;
+        }
+        .footer_nav {
+            text-align: center;
+        }
+        .footer_nav a {
+            color: #203A74;
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            line-height: 33px;
+            margin: 0;
+        }
+        /* 頁腳RWD M-size */
+        @media screen and (max-width: 770px) {
+            .footer {
+                min-height: 100%;
+            }
+            .footer_content {
+                width: 259px;
+                position: relative;
+                height: 600px;
+            }
+            .foot-ms-0 {
+                position: absolute;
+                top: 60%;
+            }
+            .foot-ms-1 {
+                position: absolute;
+                top: 0%;
+                left: 50px;
+            }
+            .foot-ms-2 {
+                position: absolute;
+                top: 50%;
+                width: 215px;
+                height: 51px;
+                left: 20px;
+            }
+            .footer_nav a {
+                color: #203A74;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+                line-height: 33px;
+            }
+        }
