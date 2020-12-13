@@ -161,7 +161,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: auto;
+    height: 100%;
 }
 
 .content-ms-0 {
@@ -178,15 +178,41 @@ main {
 /* RWD for mid size content */
 
 @media screen and (max-width: 770px) {
-    .content_fluid {}
+    .content_fluid {
+        margin-left: 5%;
+        width: 95%;
+    }
     .content-ms-0 {
-        width: 24%;
+        width: 30%;
     }
     .content-ms-1 {
-        width: 65%;
+        width: 60%;
     }
-    .loc-ms-0 {
-        font-size: 36px;
+    .loc-lg-0 {
+        font-size: 36px !important;
+    }
+    .loc {
+        height: 40% !important;
+    }
+    .air {
+        height: 50% !important;
+    }
+    .loc img {
+        width: 18%;
+    }
+    .air_1 img {
+        width: 15% !important;
+    }
+    .air_pollution {
+        font-size: 72px !important;
+        line-height: 72px !important;
+        margin: 0;
+    }
+    .air_pollution::after {
+        font-size: 18px !important;
+    }
+    .air p {
+        font-size: 18px !important;
     }
 }
 
@@ -224,7 +250,7 @@ main {
 }
 
 .air_1 {
-    height: 180px;
+    height: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -310,7 +336,7 @@ temp {
     }
 }
 
-.ph_row h1 {
+.ph_row_fluid h1 {
     width: 220px;
     height: 40px;
     background-color: #AAA28E;
@@ -325,7 +351,7 @@ temp {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1155px) {
     .ph_row_fluid {
         justify-content: space-between;
     }
@@ -337,18 +363,23 @@ temp {
 
 .ph_lg_1 {
     width: 25%;
+    height: auto;
+    margin-top: 2.5%;
 }
 
 .ph_lg_2 {
     width: 25%;
+    margin-top: 2.5%;
 }
 
 .ph_lg_3 {
     width: 25%;
+    margin-top: 2.5%;
 }
 
 .ph_lg_4 {
     width: 25%;
+    margin-top: 2.5%;
 }
 
 .ph_lg_5 {
@@ -366,7 +397,7 @@ temp {
     margin-top: 2.5%;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1000px) {
     .ph_md_0 h1 {
         width: 176px;
         height: 176px;
@@ -377,6 +408,7 @@ temp {
     }
     .ph_md_0 {
         width: 33%;
+        margin-top: 2.5%;
     }
     .ph_md_1 {
         width: 33%;
