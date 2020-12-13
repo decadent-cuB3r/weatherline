@@ -40,20 +40,20 @@
                             <div class="loc_text">
                                 <h1 class="loc-lg-0 loc-ms-0">台北市</h1>
                                 <h2 class="loc-lg-1 loc-ms-1" id="datetime"></h2>
-                                <select name="districts" class="custom-select" style="width: 100%;">
-                                    <option value="0">select a district</option>
-                                    <option value="1">大同區</option>
-                                    <option value="2">中正區</option>
-                                    <option value="3">中山區</option>
-                                    <option value="4">松山區</option>
-                                    <option value="5">大安區</option>
-                                    <option value="6">萬華區</option>
-                                    <option value="7">信義區</option>
-                                    <option value="8">士林區</option>
-                                    <option value="9">北投區</option>
-                                    <option value="10">內湖區</option>
-                                    <option value="11">南港區</option>
-                                    <option value="12">文山區</option>
+                                <select size="1" name="districts" id="districts" onchange="changeAirPollution()" class="custom-select" style="width: 100%;">
+                                    <option value="93">select a district</option>
+                                    <option value="73">大同區</option>
+                                    <option value="98">中正區</option>
+                                    <option value="120">中山區</option>
+                                    <option value="116">松山區</option>
+                                    <option value="98">大安區</option>
+                                    <option value="124">萬華區</option>
+                                    <option value="128">信義區</option>
+                                    <option value="119">士林區</option>
+                                    <option value="107">北投區</option>
+                                    <option value="109">內湖區</option>
+                                    <option value="112">南港區</option>
+                                    <option value="129">文山區</option>
                                 </select>
                             </div>
                             <img src="./images/weather-forecast-icon-sets-cover 1.png" alt="" width="40%">
@@ -61,7 +61,7 @@
                         <div class="air">
                             <div class="air_1">
                                 <img src="./images/icon_Imotion_color_3.svg" alt="" width="24%">
-                                <h1 class=" air_pollution ">124</h1>
+                                <h1 id="air_pollution" class="air_pollution">124</h1>
                             </div>
                             <p>敏感族群應減少在戶外劇烈活動(橘色提醒)。</p>
                         </div>
