@@ -158,6 +158,10 @@ header {
 /* header small size RWD */
 
 @media screen and (max-width: 550px) {
+    .header_nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .nav_list {
         display: none;
     }
@@ -173,6 +177,25 @@ header {
     }
     .nav_menu:hover {
         color: #AAA28E;
+    }
+    #nav_list {
+        display: none;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #nav_list.open {
+        display: flex;
+        transform: translateY(-);
+        transition: 1s ease-in-out;
+    }
+    #nav_list .nav_list_item {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
     }
     .header_alert .nav_list {
         display: flex;
