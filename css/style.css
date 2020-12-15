@@ -99,6 +99,10 @@ header {
     line-height: 33px;
 }
 
+.nav_list_item:hover {
+    cursor: pointer;
+}
+
 .nav_list_item a {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -113,13 +117,13 @@ header {
     background-position: center;
 }
 
-.red {
+.nav_list_item.red {
     width: 400px;
     height: 60px;
     line-height: 60px;
 }
 
-.red a {
+.nav_list_item.red a {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -137,19 +141,19 @@ header {
     .nav_list_item {
         margin-right: 24px;
         width: 70px;
-        height: 12px;
+        height: 18px;
         text-align: center;
-        line-height: 12px;
+        line-height: 18px;
     }
     .nav_list_item a {
         font-size: 10px;
     }
-    .red {
+    .nav_list_item.red {
         width: 136px;
         height: 40px;
         line-height: 40px;
     }
-    .red a {
+    .nav_list_item.red a {
         font-size: 18px;
     }
 }
@@ -174,9 +178,11 @@ header {
         display: block;
         margin-right: 6%;
         color: black;
+        cursor: pointer;
     }
     .nav_menu:hover {
         color: #AAA28E;
+        transform: scale(1.3);
     }
     #nav_list {
         display: none;
@@ -184,18 +190,23 @@ header {
         width: 100%;
         margin: 0;
         padding: 0;
+        transition: all 2s;
+        transform: translateY(50%);
     }
     #nav_list.open {
         display: flex;
-        transform: translateY(-);
-        transition: 1s ease-in-out;
+        transition: 2s;
+        transform: translateY(0%);
     }
     #nav_list .nav_list_item {
         width: 100% !important;
         margin: 0;
         padding: 0;
-        height: 30px;
-        line-height: 30px;
+        height: 60px;
+        line-height: 60px;
+    }
+    #nav_list .nav_list_item a {
+        font-size: 36px;
     }
     .header_alert .nav_list {
         display: flex;
@@ -205,6 +216,9 @@ header {
     .nav_list_item.red {
         width: 50%;
         height: 10%;
+    }
+    .nav_list_item.red a {
+        font-size: 24px;
     }
 }
 
@@ -241,15 +255,20 @@ main {
 /* RWD for mid size content */
 
 @media screen and (max-width: 770px) {
+    main {
+        padding: 0;
+        margin: 0;
+    }
     .content_fluid {
-        margin-left: 5%;
-        width: 90%;
+        margin: 2% 2% 0 2%;
+        width: 96%;
     }
     .content-ms-0 {
-        width: 40%;
+        width: 40% !important;
     }
     .content-ms-1 {
-        width: 60%;
+        width: 60% !important;
+        margin: 0;
     }
     .loc-lg-0 {
         font-size: 36px !important;
