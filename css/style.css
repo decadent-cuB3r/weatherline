@@ -185,18 +185,11 @@ header {
         transform: scale(1.3);
     }
     #nav_list {
-        display: none;
+        display: flex;
         flex-wrap: wrap;
         width: 100%;
         margin: 0;
         padding: 0;
-        transition: all 2s;
-        transform: translateY(50%);
-    }
-    #nav_list.open {
-        display: flex;
-        transition: 2s;
-        transform: translateY(0%);
     }
     #nav_list .nav_list_item {
         width: 100% !important;
