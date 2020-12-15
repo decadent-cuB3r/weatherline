@@ -151,6 +151,18 @@ header {
 }
 
 
+/* header small size RWD */
+
+@media screen and (max-width: 550px) {
+    .nav_list {
+        display: none;
+    }
+    .header_nav img {
+        margin: 2%;
+    }
+}
+
+
 /* 主頁面css */
 
 main {
@@ -161,7 +173,7 @@ main {
 .content_fluid {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 97%;
     height: 100%;
 }
 
@@ -214,6 +226,27 @@ main {
     }
     .air p {
         font-size: 18px !important;
+    }
+}
+
+
+/* RWD for small size content */
+
+@media screen and (max-width: 720px) {
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    .content_fluid {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+    .content-ms-0 {
+        width: 100%;
+    }
+    .content-ms-1 {
+        width: 100%;
     }
 }
 
