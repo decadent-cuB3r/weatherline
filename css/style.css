@@ -210,12 +210,14 @@ header {
     }
     .header_alert .nav_list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 100%;
+        padding: 0;
     }
     .nav_list_item.red {
-        width: 50%;
+        width: 48%;
         height: 10%;
+        margin: 0;
     }
     .nav_list_item.red a {
         font-size: 24px;
@@ -303,19 +305,25 @@ main {
 
 @media screen and (max-width: 720px) {
     main {
-        margin: 0;
         padding: 0;
     }
     .content_fluid {
         width: 100% !important;
+        display: flex;
+        flex-wrap: wrap !important;
         margin: 0;
         padding: 0;
     }
-    .content-ms-0 {
-        width: 100%;
-    }
+    .content-ms-0,
     .content-ms-1 {
-        width: 100%;
+        width: 100% !important;
+        margin: 2% 0;
+    }
+    .loc,
+    .air {
+        height: min-content;
+        padding: 5% 0;
+        margin: 2% 0;
     }
 }
 
