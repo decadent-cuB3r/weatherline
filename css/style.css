@@ -186,6 +186,7 @@ header {
     #nav_list {
         position: absolute;
         display: flex;
+        overflow: hidden;
         flex-wrap: wrap;
         width: 0%;
         top: 60px;
@@ -193,13 +194,12 @@ header {
         margin: 0;
         padding: 0;
         opacity: 0;
-        transition: all 1s;
+        transition: all .5s;
     }
     #nav_list.open {
         z-index: 10;
         opacity: 1;
         width: 100%;
-        transform: translateX(0%);
         display: flex;
     }
     #nav_list .nav_list_item {
