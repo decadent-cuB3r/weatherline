@@ -326,9 +326,12 @@ main {
         width: 100% !important;
         margin: 2% 0;
     }
+    .content-ms-1 {
+        height: fit-content;
+    }
     .loc,
     .air {
-        height: min-content;
+        height: 50%;
         padding: 5% 0;
         margin: 2% 0;
     }
@@ -559,6 +562,24 @@ temp::after {
         margin-top: 50px;
         margin: 0;
         padding: 0;
+    }
+}
+
+
+/* section content_detailed RWD small size */
+
+@media screen and (max-width: 768px) {
+    .detail_lg_1,
+    .detail_lg_2,
+    .detail_lg_4,
+    .detail_lg_5 {
+        width: 50%;
+    }
+    .detail_lg_3 {
+        width: 0%;
+    }
+    .content_detailed {
+        margin: 0;
     }
 }
 
