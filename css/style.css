@@ -138,6 +138,10 @@ header {
     color: red;
 }
 
+.nav_list_item.red:hover {
+    box-shadow: 5px 5px red;
+}
+
 
 /* 頁標RWD M-size */
 
@@ -659,11 +663,14 @@ temp::after {
     opacity: 1;
 }
 
-.ph:hover .ph img {
-    background-color: rbga(0, 0, 0, 0.3);
+.ph img {
+    transition: .5s;
 }
 
-.ph img {}
+.ph:hover img {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
 
 .ph_lg_0 {
     width: 100%;
@@ -706,8 +713,6 @@ temp::after {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
-
-.ph_lg_1:hover {}
 
 @media screen and (max-width: 1000px) {
     .ph_md_0 h1 {
