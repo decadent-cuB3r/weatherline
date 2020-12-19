@@ -756,6 +756,73 @@ temp::after {
 }
 
 
+/* photos RWD small size */
+
+@media screen and (max-width: 768px) {
+    .ph_md_0 h1 {
+        width: 100%;
+        height: 100px;
+        background-color: #AAA28E;
+        line-height: 100px;
+        text-align: center;
+        margin: 0;
+    }
+    .ph_md_0 {
+        width: 100%;
+        margin: 0;
+    }
+    .ph_md_1 {
+        width: 100%;
+    }
+    .ph_md_2 {
+        width: 100%;
+    }
+    .ph_md_3 {
+        width: 100%;
+    }
+    .ph_md_4 {
+        width: 100%;
+    }
+    .ph_md_5 {
+        width: 100%;
+    }
+    .ph_md_6 {
+        width: 100%;
+    }
+    .ph_md_7 {
+        width: 100%;
+    }
+    .ph_md_1 img {
+        width: 80%;
+        height: 100%;
+    }
+    .ph_md_2 img {
+        width: 80%;
+        height: 100%;
+    }
+    .ph_md_3 img {
+        width: 80%;
+        height: 100%;
+    }
+    .ph_md_4 img {
+        width: 80%;
+        height: 100%;
+    }
+    .ph_md_5 img {
+        width: 80%;
+        height: 100%;
+    }
+    .ph_md_6 img {
+        width: 80%;
+        height: 100%;
+    }
+    .ph_md_7 img {
+        width: 408px;
+        height: 176px;
+    }
+}
+
+
 /* 頁腳css */
 
 footer {
