@@ -649,6 +649,7 @@ temp::after {
     top: 50%;
     width: 100%;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: white;
     z-index: 99;
@@ -656,6 +657,8 @@ temp::after {
     transition: 1s;
     opacity: 0;
 }
+
+.info::after {}
 
 .ph:hover .info {
     /* background-color: rgba( 0, 0, 0, 0.3); */
