@@ -102,6 +102,13 @@ header {
 
 .nav_list_item:hover {
     cursor: pointer;
+    color: #AAA28E;
+    background-color: #203a74;
+    box-shadow: 5px 5px #AAA28E;
+}
+
+.nav_list_item:hover a {
+    color: #AAA28E;
 }
 
 .nav_list_item a {
@@ -262,7 +269,7 @@ main {
 
 /* RWD for mid size content */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1278px) {
     main {
         padding: 0;
         margin: 0;
@@ -526,7 +533,7 @@ temp::after {
 
 /* content detail RWD after 1280px(mid size) */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1278px) {
     .content_detailed {
         width: 90%;
         padding: 5%;
@@ -634,9 +641,12 @@ temp::after {
 
 .info {
     position: absolute;
+    text-align: center;
     top: 50%;
-    left: 40%;
+    width: 100%;
+    height: 100%;
     font-size: 30px;
+    color: white;
     z-index: 99;
     transform: translate(0, 100px);
     transition: 1s;
@@ -644,10 +654,16 @@ temp::after {
 }
 
 .ph:hover .info {
-    background-color: rgba( 0, 0, 0, 0.3);
+    /* background-color: rgba( 0, 0, 0, 0.3); */
     transform: translate(0%, 0%);
     opacity: 1;
 }
+
+.ph:hover .ph img {
+    background-color: rbga(0, 0, 0, 0.3);
+}
+
+.ph img {}
 
 .ph_lg_0 {
     width: 100%;
@@ -690,6 +706,8 @@ temp::after {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
+
+.ph_lg_1:hover {}
 
 @media screen and (max-width: 1000px) {
     .ph_md_0 h1 {
@@ -855,6 +873,12 @@ footer {
     font-size: 24px;
     line-height: 33px;
     margin: 0;
+    transition: all .2s;
+}
+
+.footer_nav a:hover {
+    box-shadow: 5px 5px #AAA28E;
+    border: 2px solid #AAA28E;
 }
 
 
