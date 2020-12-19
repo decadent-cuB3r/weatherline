@@ -134,7 +134,7 @@ header {
 
 /* 頁標RWD M-size */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width:880px) {
     .header_nav img {
         width: 84px;
         height: 20px;
@@ -234,11 +234,11 @@ header {
 /* 主頁面css */
 
 main {
-    margin-left: 20px;
     vertical-align: middle;
 }
 
 .content_fluid {
+    margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
     width: 97%;
@@ -262,13 +262,13 @@ main {
 
 /* RWD for mid size content */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1280px) {
     main {
         padding: 0;
         margin: 0;
     }
     .content_fluid {
-        margin: 2% 2% 0 2%;
+        margin: 2%;
         width: 96%;
     }
     .content-ms-0 {
@@ -419,11 +419,13 @@ main {
 .content_detailed {
     display: flex;
     flex-wrap: wrap;
-    width: 1160px;
+    width: 90%;
     height: fit-content;
     padding: 40px;
     background-color: #7aa4b7;
     margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 
@@ -509,9 +511,55 @@ temp {
     font-weight: bold;
 }
 
-.content_detailed temp::after {
+temp::after {
     content: '℃';
     font-size: 144px;
+}
+
+
+/* content detail RWD after 1280px(mid size) */
+
+@media screen and (max-width: 1280px) {
+    .content_detailed {
+        width: 90%;
+        padding: 5%;
+        height: 15%;
+    }
+    .data_info,
+    .data_name {
+        line-height: 50px;
+    }
+    .detail_txt h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .detail_txt p {
+        font-size: 18px;
+        line-height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    temp,
+    temp::after {
+        font-size: 72px;
+        margin: 0;
+        padding: 0;
+    }
+    .data_name li,
+    .data_info li {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    .data_name li::after,
+    .data_info li::after {
+        right: 0;
+        margin-top: 50px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
