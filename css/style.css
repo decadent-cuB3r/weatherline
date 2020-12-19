@@ -374,6 +374,10 @@ main {
     font-size: 18px;
 }
 
+.loc-ms-1 {
+    height: 20px;
+}
+
 .custom_select {
     width: 40%;
 }
